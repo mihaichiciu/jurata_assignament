@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 10;
+}
+
+.navContent {
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.75rem;
+}
+
+.logoContainer {
+  display: inline-block;
+  height: 1.75rem;
+}
+
+.logo {
+  height: 100%;
+}

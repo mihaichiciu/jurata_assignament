@@ -1,0 +1,12 @@
+.container {
+  z-index: 200;
+  width: 53rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  width: 28rem;
+  padding: 3rem;
+}
