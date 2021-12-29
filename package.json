@@ -1,5 +1,5 @@
 {
-  "name": "jurata-assignament",
+  "name": "jurata-assignment",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.6",
+    "apollo-link": "^1.2.14",
+    "apollo-link-rest": "^0.8.0",
+    "graphql": "^15.8.0",
+    "graphql-anywhere": "^4.2.7",
     "next": "12.0.7",
+    "qs": "^6.10.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },

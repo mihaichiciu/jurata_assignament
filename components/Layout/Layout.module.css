@@ -1,5 +1,5 @@
 .heroWrapper {
-  background-image: url('../../static/images/hero-private-desktop.jpg');
+  background-image: url('../../public/hero-private-desktop.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;

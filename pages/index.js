@@ -1,19 +1,16 @@
 import Head from 'next/head';
 import { SearchAnswer } from '../components';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Jurata Assignament</title>
-        <link
-          href='https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap'
-          rel='stylesheet'
-        />
+        <title>Jurata assignment</title>
+        <meta name='description' content='This app is an Assignment for Jurata' />
       </Head>
       <SearchAnswer />
     </>
   );
 };
 
-export default Home;
+export default HomePage;

@@ -17,7 +17,7 @@ const SearchBar = ({ handleSearch, ...props }) => {
         {...props}
       />
       <span className={classes.searchIcon} onClick={() => handleSearch()}>
-        <Image src={searchIcon} />
+        <Image src={searchIcon} alt='Search icon' />
       </span>
     </div>
   );

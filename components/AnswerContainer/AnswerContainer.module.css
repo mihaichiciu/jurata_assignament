@@ -3,3 +3,10 @@
   margin-bottom: 0;
   flex: 1;
 }
+
+.error {
+  overflow-y: auto;
+  margin-bottom: 0;
+  flex: 1;
+  color: #ff3333;
+}
