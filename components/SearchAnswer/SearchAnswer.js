@@ -1,3 +1,4 @@
+import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
 import { AnswerContainer, Wrapper, SearchBar } from '../';
 import client from '../../apollo/apollo-client';
@@ -7,6 +8,7 @@ const SearchAnswer = () => {
   const [search, setSearch] = useState('');
   const [answer, setAnswer] = useState('');
   const [error, setError] = useState('');
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -53,10 +55,10 @@ const SearchAnswer = () => {
   };
 
   return (
-    <Wrapper title='Search for an answer'>
+    <Wrapper title={t('home:homeWrapperTitle')}>
       <SearchBar
         value={search}
-        placeholder='Why did the chicken crossed the road?'
+        placeholder={t('common:searchBarPlaceholder')}
         onChange={handleChange}
         handleSearch={handleSearch}
       />

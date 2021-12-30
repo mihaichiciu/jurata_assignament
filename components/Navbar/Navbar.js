@@ -1,20 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 import logo from '../../public/jurataLogo.svg';
 import classes from './Navbar.module.css';
+import LocaleSwitcher from '../LocaleSwitcher/LocaleSwitcher';
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <header className={classes.header}>
       <div className={classes.navContent}>
         <Link href='/'>
           <a className={classes.logoContainer}>
-            <Image height={28} className={classes.logo} src={logo} alt='Picture of the logo' />
+            <Image height={28} className={classes.logo} src={logo} alt={t('common:logoAlt')} />
           </a>
         </Link>
-        <nav>
-          <ul></ul>
-        </nav>
+        <LocaleSwitcher />
       </div>
     </header>
   );

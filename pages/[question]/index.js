@@ -2,22 +2,26 @@ import Head from 'next/head';
 import client from '../../apollo/apollo-client';
 import { GET_ANSWER } from '../../apollo/queries';
 import { AnswerContainer, Wrapper } from '../../components';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const QuestionPage = ({ answer = '', error = '' }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Head>
-        <title>Answer for your question</title>
+        <title>{t('question:questionPageTitle')}</title>
       </Head>
-      <Wrapper title='Answer for your question'>
+      <Wrapper title={t('question:questionPageWrapperTitle')}>
         <AnswerContainer answer={answer} error={error} />
       </Wrapper>
     </>
   );
 };
 
-export const getServerSideProps = async (context) => {
-  const question = context.params.question;
+export const getServerSideProps = async ({ locale, params }) => {
+  const question = params.question;
   try {
     const { data } = await client.query({
       query: GET_ANSWER,
@@ -28,12 +32,14 @@ export const getServerSideProps = async (context) => {
     return {
       props: {
         answer: data.query.answer,
+        ...(await serverSideTranslations(locale, ['question', 'common'])),
       },
     };
   } catch (err) {
     return {
       props: {
         error: JSON.stringify(err),
+        ...(await serverSideTranslations(locale, ['question', 'common'])),
       },
     };
   }
