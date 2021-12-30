@@ -41,7 +41,7 @@ const LocaleSwitcher = () => {
       <div className={classes.button} onClick={() => toggleActive()}>
         {localeMap[router.locale]}
         <span className={classes.arrow}>
-          <Image src={isActive ? upArrow : downArrow} />
+          <Image src={isActive ? upArrow : downArrow} alt='' />
         </span>
       </div>
       {isActive && (
