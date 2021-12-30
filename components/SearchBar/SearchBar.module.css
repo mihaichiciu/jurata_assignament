@@ -3,7 +3,7 @@
   align-items: center;
   padding: 1rem;
   overflow: hidden;
-  border: 1px solid #f6f5f3;
+  border: 0.0625rem solid #f6f5f3;
   border-radius: 0.25rem;
   height: 4rem;
 }

@@ -36,7 +36,8 @@ const SearchAnswer = () => {
     //     }
     //   })
     //   .catch((err) => {
-    //     console.error(err);
+    //     setError(JSON.stringify(err));
+    //     setAnswer('');
     //   });
 
     try {

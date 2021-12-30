@@ -1,5 +1,5 @@
 This is a Next.js public project build as an assignment for a job interview at Jurata.
-As a requirement for this project, you will need to have NodeJS installed on your computer.
+As a requirement for this project, you will need to have NodeJS installed on your computer, preferably the latest stable version.
 
 ## How to run the project
 

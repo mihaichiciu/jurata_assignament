@@ -3,14 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
   position: absolute;
   z-index: 10;
 }
 
 .navContent {
   display: flex;
-  max-width: 1180px;
+  max-width: 73.75rem;
   margin: 0 auto;
   width: 100%;
   align-items: center;
@@ -21,8 +21,4 @@
 .logoContainer {
   display: inline-block;
   height: 1.75rem;
-}
-
-.logo {
-  height: 100%;
 }

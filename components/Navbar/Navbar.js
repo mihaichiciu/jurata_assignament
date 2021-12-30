@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className={classes.navContent}>
         <Link href='/'>
           <a className={classes.logoContainer}>
-            <Image height={28} className={classes.logo} src={logo} alt={t('common:logoAlt')} />
+            <Image height={28} src={logo} alt={t('common:logoAlt')} />
           </a>
         </Link>
         <LocaleSwitcher />

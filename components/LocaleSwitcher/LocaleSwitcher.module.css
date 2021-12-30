@@ -26,10 +26,10 @@
   position: absolute;
   top: 140%;
   left: 0;
-  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: 0.0625rem 0.0625rem 0.3125rem 0.1875rem rgba(0, 0, 0, 0.06);
   color: #ffffff;
   width: 100%;
-  backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(0.15625rem);
 }
 
 .item {

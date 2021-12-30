@@ -5,7 +5,7 @@ const restLink = new RestLink({
   uri: process.env.NEXT_PUBLIC_API_URI,
   headers: {
     'Content-Type': 'application/json',
-    Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_AUTHORIZATION_KEY}`,
+    'Authorization': `Bearer ${process.env.NEXT_PUBLIC_API_AUTHORIZATION_KEY}`,
   },
 });
 
